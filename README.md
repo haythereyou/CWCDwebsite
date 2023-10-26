@@ -26,14 +26,15 @@ Proposed CWCD website
 
 - Database: CWCD
     - Table: accounts
-        - Column: id
+        - Column: user_id
         - Column: user
         - Column: password
         - Column: email
-
-    - ACCOUNTS
-        
-
+    - Table: owners
+        - (owner_id, property_id, user_id)
+    - Table: orders
+        - (order_id, originator_id, start_date, end_date, flow)
 
 - Questions
-    - Previous board member discussions 
+    - Previous board member discussions about website
+    - How do we want to divide up the tasks?
